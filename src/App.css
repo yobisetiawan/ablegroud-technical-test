@@ -3,3 +3,7 @@
 @plugin "daisyui" {
   themes: light --default, dark --prefersdark, corporate;
 }
+
+html, body {
+  background-color: #b3eddb;
+}
