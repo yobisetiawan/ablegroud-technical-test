@@ -68,7 +68,9 @@ const CurrencyListManagement = ({ rates, onAddRate, onDeleteRate }: Props) => {
         </form>
 
         <div>
-          <h3 className="font-bold mb-4">Current Rates:</h3>
+          {rates.length > 0 && (
+            <h3 className="font-bold mb-4">Current Rates:</h3>
+          )}
 
           <div className="max-h-[400px] overflow-y-auto ">
             <ul>
@@ -87,6 +89,9 @@ const CurrencyListManagement = ({ rates, onAddRate, onDeleteRate }: Props) => {
               ))}
             </ul>
           </div>
+          {rates.length === 0 && (
+            <div className="border p-4 border-base-200 rounded ">No Data</div>
+          )}
         </div>
       </div>
     </div>

@@ -26,8 +26,10 @@ function App() {
   return (
     <div className="app">
       <div className="container max-w-5xl mx-auto p-4">
-        <header className="prose mb-8">
-          <h1>Interview Test</h1>
+        <header className=" mb-8 flex justify-center pt-10">
+          <div className="prose">
+            <h1 className="text-center">Interview Test</h1>
+          </div>
         </header>
         <main>
           <div className="grid  grid-cols-2 gap-6">
